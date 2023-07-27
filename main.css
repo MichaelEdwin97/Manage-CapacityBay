@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg-tablet-pattern.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.contain-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+}
+
+a {
+    text-decoration: none;
+    padding-left: 6px;
+    color:hsl(228, 39%, 23%) ;
+}
+
+a:hover {
+    color: hsl(227, 12%, 61%);
+}
+
+.contain-head nav ul{
+    display: flex;
+    list-style: none;
+}
+.contain-head nav ul > li {
+    padding: 6px;
+}
+.nav-button button, .chart-text button, .butt button, .footer-log button{
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: hsl(12, 88%, 59%) ;
+    cursor: pointer;
+}
+.nav-hamburger {
+    display: none;
+}
+
+
+/* for the chart placement */
+
+.chart-placement {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+/* .image-chart {
+    position: relative;
+} */
+.chart-placement img {
+    width: 400px;
+    /* position: absolute;
+    right: 0; */
+    /* object-fit: cover; */
+
+    
+}
+
+.chart-text h2, .text-group h2, .testimonial h2 {
+    font-size: 20px;
+    padding: 25px 0px 20px 0 ;
+    line-height: 1.6;
+    color: hsl(228, 39%, 23%);
+}
+.chart-text p, .text-group p, .about-group p , .testimonial-text p, .footer-log p, .footer-nav a {
+    color: hsl(227, 12%, 61%);
+    font-size: 12px;
+    padding: 0 0 50px 0;
+    line-height: 1.9;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+
+.about {
+    margin-top: 60px;
+}
+
+.about-group h3 {
+    font-size: 14px;
+    color: hsl(228, 39%, 23%);
+
+}
+
+.about-group em {
+    padding-right: 10px;
+}
+.combus {
+    display: flex;
+    margin-top: 20px;
+}
+.combus em {
+    font-style: normal;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: hsl(12, 88%, 59%) ;
+    margin-right: 20px;
+}
+
+.testimonial h2 {
+    text-align: center;
+    padding-bottom: 4.5rem;
+
+}
+
+.testimonial-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+
+}
+.testimonial-text div {
+    background: hsl(0, 0%, 98%);
+    margin: 10px;
+    width: 100%;
+    gap: 10px;
+}
+.testimonial-text img {
+    position: relative;
+    width: 50px;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+}
+
+.butt button {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.testimonial-text p {
+    text-align: center;
+    padding: 10px 35px 30px 35px;
+}
+.testimonial-text h3 {
+    color: hsl(228, 39%, 23%);
+    font-size: 14px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: hsl(12, 64%, 61%);
+    box-shadow: 0px 2px 2px hsl(12, 40%, 65%);
+}
+
+.simplify {
+    background-color: hsl(12, 88%, 59%);
+    margin-top: 6rem;
+}
+
+.simplify_team{
+   display: flex;
+   justify-content: space-between;
+    
+}
+
+.simplify_team div {
+   padding-top: 45px;
+}
+.simplify_team p{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.simplify_team  button {
+    outline: none;
+    border: none;
+    color: hsl(12, 68%, 48%)f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+footer {
+    background: hsl(228, 39%, 23%);
+    min-height: 100px;
+}
+.footer-details a:hover {
+    color: hsl(12, 64%, 61%);
+}
+.footer-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.footer-details div {
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    margin-top: 20px;
+}
+.copy {
+    display: none;
+}
+.footer-nav {
+    position: relative;
+    display: flex;
+    gap: 5rem;  
+    padding: 0px 10px 30px;
+}
+.footer-nav a {
+    display: block;
+    padding: 0px 0px 7px;
+    text-align: justify;
+}
+
+.footer-log p {
+    text-align: right;
+}
+.footer-log input[type="email"]{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.social_icon i {
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-log button {
+    padding: 5px 10px;
+}
+
+@media (max-width: 930px){
+    nav{
+        font-size: 14px;
+    }
+    .logo-place img {
+        width: 120px;
+    }
+    
+}
+
+@media (max-width: 830px) {
+    nav, .nav-button{
+        display: none;
+    }
+    .nav-hamburger {
+        display: block;
+    }
+    .image-chart{
+        order: -1;
+    }
+    .image-chart img{
+        width: 100%;
+        margin: auto;
+        padding: 0 50px;
+    }
+    .simplify_team{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+         
+     }
+    
+    .chart-placement{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .chart-text, .text-group,  .simplify_team {
+        text-align: center;
+    }
+    .footer-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-log p {
+        display: none;
+    }
+
+    .footer-log {
+        order: -1;
+        text-align: center;
+    }
+    .footer-nav {
+        order: 0;
+    }
+    .footer-logo {
+        order: 1;
+    }
+    .copy {
+        order: 1;
+    }
+
+    .footer-logo img {
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    .copy {
+        display: block;
+        color: hsl(227, 12%, 61%);
+        font-size: 13px;
+        padding-bottom: 20px;
+       }
+
+
+}
+
+
+@media (max-width:500px){
+   .footer-logo{
+    display: flex;
+    flex-direction: column;
+   } 
+   .social_icon{
+    order: -1;
+   }
+   .copy {
+    display: block;
+    color: hsl(227, 12%, 61%);
+    font-size: 13px;
+    padding-bottom: 20px;
+   }
+}
